@@ -1,19 +1,18 @@
 /*
-!! デプロイ時操作 !!
+基本的なことははREADMEに書いてあるはず
 
-gas　エディタ→サービス→Admin SDK APIのインポート
-→メンション時のUID取得用、一度特定したら関数を使わず直接IDを入れても良い
-
-gas　トリガー→トリガーの編集→イベントの種類を選択→「変更時」に指定→保存
-→activeCellの変更検出用
-
-sendGoogleChatMessage関数の調達希望表リンクを適切なものに差し替え
-
-searchUserId関数のメンション相手のアドレスを適切なものに差し替え
+クソコードでごめんな，でも当時の俺も適当に書いてたからさ，ゆるしてちょうだい．
 
 2024年 4月11日
 11期生　野本
 */
+function searchUserId() {
+    //UID出力
+    const email = '****'; //メンション相手のアドレスに置き換え
+    const user = AdminDirectory.Users.get(email, { viewType: 'domain_public' });
+    const userId = (user.id); // Google Chat の USER_IDを拾う
+    return userId;
+}
 
 function chatNotice() {
     //シート情報取得
@@ -124,12 +123,4 @@ function sendGoogleChatMessage(message) {
     };
 
     UrlFetchApp.fetch(webhookUrl, options);
-}
-
-function searchUserId() {
-    //UID出力
-    const email = '****'; //メンション相手のアドレスに置き換え
-    const user = AdminDirectory.Users.get(email, { viewType: 'domain_public' });
-    const userId = (user.id); // Google Chat の USER_IDを拾う
-    return userId;
 }
