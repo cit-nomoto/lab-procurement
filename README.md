@@ -9,7 +9,7 @@ GoogleSpreadSheetの変更を読み取り, GoogleChat上で田隈先生にメン
 ### ①GoogleChat側
 - スペース名横の`v`を押下  
 - `アプリと統合`→`Webhook`→`Webhookを追加`  
-- 好きな名前を付けて，`リンクをコピー`からWebhookURLを控える  
+- 好きな名前を付けて，`リンクをコピー`から`WebhookURL`を控える  
   
 ### ②SpredSheet側
 - `拡張機能`→`Apps Script`→`プロジェクト（存在しない場合，新規プロジェクトを作成）`  
