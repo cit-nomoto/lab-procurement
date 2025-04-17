@@ -21,6 +21,6 @@ GoogleSpreadSheetの変更を読み取り, GoogleChat上で田隈先生にメン
 - `L80`，`webhookUrl`変数の値を，①にて取得した`WebhookURL`に書き換える
 - `L105`，`cardMessage` JSON内　`url`の値を，`調達希望表のURL`に書き換える
   
-- `searchUserID`関数を`実行`し，`通知を送信したいアドレスのID`が取得できたならば，`carMessage`内に直接記述しても良い
+- `searchUserID`関数を`実行`し，`通知を送信したいアドレスのID`が取得できたならば，`cardMessage`内に直接記述しても良い
 
 - 全部終わったら，`デプロイ`→`新しいデプロイ`→`ウェブアプリ`としてデプロイ
