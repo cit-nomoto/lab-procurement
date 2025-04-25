@@ -4,7 +4,7 @@ GoogleSpreadSheetの変更を読み取り, GoogleChat上で田隈先生にメン
 - 念のためGithub上にも残した  
 - コードが汚い
   
-## はうつー  （要GoogleWorkspace, 田隈先生のアカウントで操作）  
+## デプロイ方法  （要GoogleWorkspace, 田隈先生のアカウントで操作）  
 
 ### ①GoogleChat側
 - スペース名横の`v`を押下  
@@ -24,3 +24,8 @@ GoogleSpreadSheetの変更を読み取り, GoogleChat上で田隈先生にメン
 - `searchUserID`関数を`実行`し，`通知を送信したいアドレスのID`が取得できたならば，`cardMessage`内に直接記述しても良い
 
 - 全部終わったら，`デプロイ`→`新しいデプロイ`→`ウェブアプリ`としてデプロイ
+
+## 利用方法
+- GoogleSpreadSheetに品名，URL等々を記入
+- プルダウンリストから，申請を選択
+- （正常に動いていれば）Botが適用されているスペースにて発注情報と共に先生へのメンションが発火
